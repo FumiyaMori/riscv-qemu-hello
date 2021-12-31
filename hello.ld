@@ -7,7 +7,7 @@ SECTIONS
     .rodata : { *(.rodata) }
     .data   : { *(.data) }
     .bss    : { *(.bss) }
-    . = ALIGN(16);
+    . = ALIGN(4);
     stack = .;     /* start point of stack area */
     . = . + 0x400; /* stack area is 1KiB */
     stack0 = .;    /* initial value of stack pointer */
